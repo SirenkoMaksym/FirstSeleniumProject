@@ -1,7 +1,3 @@
-/*
- * created by Max$
- */
-
 
 package com.ait.tests;
 

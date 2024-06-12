@@ -64,7 +64,29 @@ public class HomeWorkTestSelectorCss {
 
 
     }
+    @Test
+    public void findElementByXpath() {
+        //class
+        driver.findElement(By.xpath("//*[@class='leftside-3']"));
+        //tag+class
+        driver.findElement(By.xpath("//h2[@class='product-title']"));
+        //tag+class
+        driver.findElement(By.xpath("//ul[@class='mob-top-menu']"));
+        //id
+        driver.findElement(By.xpath("//*[@id='dialog-notifications-success']"));
+        //class+class
+        driver.findElement(By.xpath("//*[contains(@class, 'column') and contains(@class, 'information')]"));
+        //xpath
+        driver.findElement(By.xpath("//*[@title='Close']"));
+        //xpath
+        driver.findElement(By.xpath("//*[@type='text/javascript']"));
+        //xpath
+        driver.findElement(By.xpath("//*[@action='/search']"));
+        //xpath
+        driver.findElement(By.xpath("//*[@aria-live='polite']"));
+        //xpath
+        driver.findElement(By.xpath("//*[@rel='shortcut icon']"));
 
-
+    }
 
 }

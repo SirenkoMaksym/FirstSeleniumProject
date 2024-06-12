@@ -71,5 +71,34 @@ public class FindElementsTest {
         //cssSelector
         WebElement cssSelector = driver.findElement(By.cssSelector("[ng-reflect-name='city']"));
         System.out.println(cssSelector.getAttribute("type"));
+
+        //contains ->*
+
+        WebElement elementContain = driver.findElement(By.cssSelector("[ng-reflect-router-link*='car']"));
+        System.out.println(elementContain.getText());
+        //start -> ^
+        driver.findElement(By.cssSelector("[ng-reflect-router-link^='let']"));
+        //ent on ->$
+        driver.findElement(By.cssSelector("[ng-reflect-router-link$='work']"));
+
+    }
+    @Test
+    public void findElementByXpath(){
+        // //*[@attr='value']
+        driver.findElement(By.xpath("//h1"));
+
+        //id
+        driver.findElement(By.xpath("//input[@id='city']"));
+        //class
+        driver.findElement(By.xpath("//*[@class='telephone']"));
+        //text()
+        driver.findElement(By.xpath("//h2[text()='Type your data and hit Yalla!']"));
+        driver.findElement(By.xpath("//h2[.='Type your data and hit Yalla!']"));
+        //contains -> //tag[contains(.,"text")]
+        driver.findElement(By.xpath("//h2[contains(.,'Yalla!')]"));
+        //contains class+
+        driver.findElement(By.xpath("//input[contains(@class,'target')]"));
+        //start -> //tag[starts-with(@attr.'startOfValue')]//input[starts-with(@class,'ng-pristine')]
+        driver.findElement(By.xpath("//input[starts-with(@class,'ng-untouched')]"));
     }
 }

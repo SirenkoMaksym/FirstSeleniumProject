@@ -101,4 +101,29 @@ public class FindElementsTest {
         //start -> //tag[starts-with(@attr.'startOfValue')]//input[starts-with(@class,'ng-pristine')]
         driver.findElement(By.xpath("//input[starts-with(@class,'ng-untouched')]"));
     }
+
+    @Test
+    public void findElementByXpath2(){
+        //parent
+        driver.findElement(By.xpath("//h1/parent::*"));//move up
+        driver.findElement(By.xpath("//h1/.."));//move up
+        driver.findElement(By.xpath("//h1/parent::div"));//move up
+
+        //ancestor
+
+        driver.findElement(By.xpath("//h1/ancestor::*"));//all
+        driver.findElement(By.xpath("//h1/ancestor::div"));//two options
+        driver.findElement(By.xpath("//h1/ancestor::div[2]"));//one option
+
+        //following-sibling
+        driver.findElement(By.xpath("//h1/following-sibling::*"));//all
+        driver.findElement(By.xpath("//h1/following-sibling::form"));//one option
+
+        //preceding-sibling
+        driver.findElement(By.xpath("//h2/preceding-sibling::*"));
+
+
+
+
+    }
 }

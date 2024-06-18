@@ -32,7 +32,8 @@ public class AddItemToCartTests extends TestBase {
         //click on Shopping cart link
         click(By.xpath("//span[.='Shopping cart']"));
         //assert 'purchases' is present
-        Assert.assertTrue(isElementPresent(By.xpath("//a[contains(.,'14.1-inch Laptop')]")));
+        Assert.assertEquals(driver.findElement(By.xpath("//a[contains(.,'14.1-inch Laptop')]")).getText(),
+                "14.1-inch Laptop" );
         pause(1000);
     }
 

@@ -27,6 +27,7 @@ public class AddItemToCartTests extends TestBase {
 
     @Test
     public void AddItem() {
+        app.getItem().pause(1000);
         app.getItem().clickOnAddButton();
         app.getItem().clickOnShoppingCartLink();
         //assert 'purchases' is present

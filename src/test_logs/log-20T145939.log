@@ -1,0 +1,5 @@
+14:59:44.650 [Test worker] INFO  com.ait.tests.TestBase -- Start test!  AddItem
+15:00:17.988 [Test worker] INFO  com.ait.tests.TestBase -- Start test!  loginNegativeTest
+15:00:30.052 [Test worker] INFO  com.ait.tests.TestBase -- Stop test!
+15:00:30.053 [Test worker] INFO  com.ait.tests.TestBase -- Start test!  loginPositiveTest
+15:00:41.301 [Test worker] INFO  com.ait.tests.TestBase -- Stop test!

@@ -1,0 +1,8 @@
+15:03:39.295 [main] WARN  o.testng.xml.TestNGContentHandler -- It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\QA\FirstSeleniumProject\src\test\resources\loginTest.xml] otherwise TestNG may fail or not work as expected.
+15:03:39.665 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\QA\FirstSeleniumProject\src\test\resources\loginTest.xml
+
+15:03:44.041 [main] INFO  com.ait.tests.TestBase -- Start test!  loginNegativeTest
+15:04:05.285 [main] INFO  com.ait.tests.TestBase -- Stop test!
+15:04:05.287 [main] INFO  com.ait.tests.TestBase -- Start test!  loginPositiveTest
+15:04:16.577 [main] INFO  com.ait.tests.TestBase -- Stop test!

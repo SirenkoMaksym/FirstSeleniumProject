@@ -1,5 +1,5 @@
 
-package com.ait.tests;
+package com.ait.tests.demo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

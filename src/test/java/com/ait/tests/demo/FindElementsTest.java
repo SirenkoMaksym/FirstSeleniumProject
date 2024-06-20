@@ -3,7 +3,7 @@
  */
 
 
-package com.ait.tests;
+package com.ait.tests.demo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

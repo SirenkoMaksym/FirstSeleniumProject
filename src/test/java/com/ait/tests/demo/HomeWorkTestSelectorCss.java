@@ -1,11 +1,12 @@
 
 
-package com.ait.tests;
+package com.ait.tests.demo;
 
+import com.ait.tests.TestBase;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class HomeWorkTestSelectorCss extends TestBase{
+public class HomeWorkTestSelectorCss extends TestBase {
     /*
 
 

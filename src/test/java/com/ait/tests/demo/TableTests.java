@@ -3,8 +3,9 @@
  */
 
 
-package com.ait.tests;
+package com.ait.tests.demo;
 
+import com.ait.tests.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class TableTests extends TestBase{
+public class TableTests extends TestBase {
     /*
     WebDriver driver;
 

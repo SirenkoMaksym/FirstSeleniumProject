@@ -5,29 +5,35 @@
 
 package com.ait.tests;
 
+import com.ait.models.UserRegistred;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CreateAccountTests extends TestBase{
+
+    @BeforeMethod
+    public void ensurePreciondition(){
+        if(app.getUser().isAccountPresent()){
+            app.getUser().clickOnOutButton();
+        }
+    }
+
+
     @Test(enabled = false)
     public void createAccountPositiveTests() {
-        //click on Login link
-        click(By.cssSelector("[href='/register']"));
-        //enter First name:
-        type(By.id("FirstName"), "Merkel");
-        //enter Last name:
-        type(By.id("LastName"), "Smit");
-        //enter Email::
-        type(By.id("Email"), "merkel@gmail.com");
-        //enter Password::
-        type(By.id("Password"), "Merkel");
-        //enter Confirm password::
-        type(By.id("ConfirmPassword"), "Merkel");
-        //click on Registration button
-        click(By.id("register-button"));
-        //assert Sign out button is present
-        //driver.findElement(By.xpath("//div[@class='header-links']//a[@class='account']"));
-        Assert.assertTrue(isElementPresent(By.xpath("//div[@class='header-links']//a[@class='account']")));
+
+        app.getUser().clickOnRegistratioLink();
+        app.getUser().fillRegistredForm(new UserRegistred()
+                .setFirstname("Merkel")
+                .setLastName("Smit")
+                .setEmail("merkel@gmail.com")
+                .setPassword("Merkel")
+                .setConfirmPasswor("Merkel"));
+        app.getUser().clickOnRegistrationButton();
+
+        Assert.assertTrue(app.getUser().isAccountPresent());
     }
+
 }

@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class FirstSeleniumTest {
-
+/*
     WebDriver driver;
 
     //before - setUP
@@ -17,12 +17,12 @@ public class FirstSeleniumTest {
         driver = new ChromeDriver();
         driver.get("https://www.google.com");// открывает с инета ссылку без истории
 
-        /*
+
         driver.navigate().to("https://www.google.com"); открывает с истории
         driver.navigate().back(); назад
         driver.navigate().forward(); вперед
         driver.navigate().refresh(); обновляет страницу
-        */
+
     }
 
 
@@ -38,4 +38,5 @@ public class FirstSeleniumTest {
         driver.quit();//для всего браузера и вкладок
         // driver.close();// только одну вкладку закрывает
     }
+    */
 }

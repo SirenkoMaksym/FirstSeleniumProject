@@ -1,0 +1,11 @@
+<suite name="LoginTest" verbose="1">
+    <test name="LoginUser">
+        <classes>
+            <class name="com.ait.tests.LoginTests">
+                <methods>
+                    <include name=".*login.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

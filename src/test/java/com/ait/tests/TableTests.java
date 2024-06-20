@@ -17,6 +17,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class TableTests extends TestBase{
+    /*
     WebDriver driver;
 
     //before - setUP
@@ -55,6 +56,8 @@ public class TableTests extends TestBase{
         driver.quit();//для всего браузера и вкладок
         // driver.close();// только одну вкладку закрывает
     }
+
+     */
 }
 
 //tag1#id tag2

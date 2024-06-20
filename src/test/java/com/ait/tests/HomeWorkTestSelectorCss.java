@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 public class HomeWorkTestSelectorCss extends TestBase{
+    /*
 
 
     //tests
@@ -18,25 +19,25 @@ public class HomeWorkTestSelectorCss extends TestBase{
     @Test
     public void findElementByCssSelector() {
         //class
-        driver.findElement(By.cssSelector(".leftside-3"));
+        app.driver.findElement(By.cssSelector(".leftside-3"));
         //tag+class
-        driver.findElement(By.cssSelector("h2.product-title"));
+        app.driver.findElement(By.cssSelector("h2.product-title"));
         //tag+class
-        driver.findElement(By.cssSelector("ul.mob-top-menu"));
+        app.driver.findElement(By.cssSelector("ul.mob-top-menu"));
         //id
-        driver.findElement(By.cssSelector("#dialog-notifications-success"));
+        app.driver.findElement(By.cssSelector("#dialog-notifications-success"));
         //class+class
-        driver.findElement(By.cssSelector(".column.information"));
+        app.driver.findElement(By.cssSelector(".column.information"));
         //cssSelector
-        driver.findElement(By.cssSelector("[title='Close']"));
+        app.driver.findElement(By.cssSelector("[title='Close']"));
         //cssSelector
-        driver.findElement(By.cssSelector("[type='text/javascript']"));
+        app.driver.findElement(By.cssSelector("[type='text/javascript']"));
         //cssSelector
-        driver.findElement(By.cssSelector("[action='/search']"));
+        app.driver.findElement(By.cssSelector("[action='/search']"));
         //cssSelector
-        driver.findElement(By.cssSelector("[aria-live='polite']"));
+        app.driver.findElement(By.cssSelector("[aria-live='polite']"));
         //cssSelector
-        driver.findElement(By.cssSelector("[rel='shortcut icon']"));
+        app.driver.findElement(By.cssSelector("[rel='shortcut icon']"));
 
 
 
@@ -44,26 +45,28 @@ public class HomeWorkTestSelectorCss extends TestBase{
     @Test
     public void findElementByXpath() {
         //class
-        driver.findElement(By.xpath("//*[@class='leftside-3']"));
+        app.driver.findElement(By.xpath("//*[@class='leftside-3']"));
         //tag+class
-        driver.findElement(By.xpath("//h2[@class='product-title']"));
+        app.driver.findElement(By.xpath("//h2[@class='product-title']"));
         //tag+class
-        driver.findElement(By.xpath("//ul[@class='mob-top-menu']"));
+        app.driver.findElement(By.xpath("//ul[@class='mob-top-menu']"));
         //id
-        driver.findElement(By.xpath("//*[@id='dialog-notifications-success']"));
+        app.driver.findElement(By.xpath("//*[@id='dialog-notifications-success']"));
         //class+class
-        driver.findElement(By.xpath("//*[contains(@class, 'column') and contains(@class, 'information')]"));
+        app.driver.findElement(By.xpath("//*[contains(@class, 'column') and contains(@class, 'information')]"));
         //xpath
-        driver.findElement(By.xpath("//*[@title='Close']"));
+        app.driver.findElement(By.xpath("//*[@title='Close']"));
         //xpath
-        driver.findElement(By.xpath("//*[@type='text/javascript']"));
+        app.driver.findElement(By.xpath("//*[@type='text/javascript']"));
         //xpath
-        driver.findElement(By.xpath("//*[@action='/search']"));
+        app.driver.findElement(By.xpath("//*[@action='/search']"));
         //xpath
-        driver.findElement(By.xpath("//*[@aria-live='polite']"));
+        app.driver.findElement(By.xpath("//*[@aria-live='polite']"));
         //xpath
-        driver.findElement(By.xpath("//*[@rel='shortcut icon']"));
+        app.driver.findElement(By.xpath("//*[@rel='shortcut icon']"));
 
     }
+
+     */
 
 }

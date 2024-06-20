@@ -18,6 +18,10 @@ public class UserHelper extends BaseHelper{
     public boolean isAccountPresent() {
         return isElementPresent(By.xpath("//div[@class='header-links']//a[@class='account']"));
     }
+    public boolean isAccountExist() {
+        return isElementPresent(By.xpath("//li[.='The specified email already exists']"));
+    }
+
 
     public void clickOnRegistrationButton() {
         click(By.id("register-button"));

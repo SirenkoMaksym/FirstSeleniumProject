@@ -35,5 +35,19 @@ public class CreateAccountTests extends TestBase{
 
         Assert.assertTrue(app.getUser().isAccountPresent());
     }
+    @Test(enabled = true)
+    public void createAccountNegativeTests() {
+
+        app.getUser().clickOnRegistratioLink();
+        app.getUser().fillRegistredForm(new UserRegistred()
+                .setFirstname("Merkel")
+                .setLastName("Smit")
+                .setEmail("merkel@gmail.com")
+                .setPassword("Merkel")
+                .setConfirmPasswor("Merkel"));
+        app.getUser().clickOnRegistrationButton();
+
+        Assert.assertTrue(app.getUser().isAccountExist());
+    }
 
 }

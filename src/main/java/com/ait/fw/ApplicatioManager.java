@@ -32,7 +32,7 @@ public class ApplicatioManager{
         } else if (browser.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
         }
-        driver=new ChromeDriver();
+
         driver.get("https://demowebshop.tricentis.com");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

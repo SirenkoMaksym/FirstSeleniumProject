@@ -46,5 +46,13 @@ task qa1(type:Test){
         systemProperty 'browser',"${browser}"
     }
 
+}
+task qa2(type:Test){
+    useTestNG(){
+        suites 'src/test/resources/regression.xml'
+    }
 
+    if(project.hasProperty('browser')){
+        systemProperty 'browser',"${browser}"
+    }
 }

@@ -5,6 +5,7 @@
 
 package com.ait.tests;
 
+import com.ait.data.UserData;
 import com.ait.models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -24,8 +25,8 @@ public class LoginTests extends TestBase{
 
         app.getUser().clickOnLoginLink();
         app.getUser().fillLoginForm(new User()
-                .setEmail("merkel@gmail.com")
-                .setPassword("Merkel"));
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
 
         Assert.assertTrue(app.getUser().isAccountPresent());
@@ -36,7 +37,7 @@ public class LoginTests extends TestBase{
 
         app.getUser().clickOnLoginLink();
         app.getUser().fillLoginForm(new User()
-                .setPassword("Merkel"));
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
 
         Assert.assertTrue(!app.getUser().isAccountPresent());
